@@ -714,7 +714,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 427px) {
   .card {
     min-width: 300px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }
 .card .card__header {
