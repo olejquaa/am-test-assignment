@@ -716,7 +716,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 427px) {
   .card {
     min-width: 300px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }
 .card .card__header {
@@ -1662,8 +1662,18 @@ body {
   background: var(--Blue, #005283);
 }
 .points-table .points-table__body .table-body__collapse-row {
+  cursor: pointer;
   color: var(--White, #fff);
   text-align: center;
+}
+.points-table .points-table__body tr:hover {
+  cursor: pointer;
+  color: var(--White, black);
+  text-align: center;
+  background: white;
+}
+.points-table .points-table__body tr:hover a {
+  color: black;
 }
 
 .opponents-table {
