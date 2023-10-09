@@ -37,14 +37,14 @@
     min-width: 110px;
 
     &::after {
-      content: url(../../files/img/arrow-gray.svg);
+      content: url(files/img/arrow-gray.svg);
       padding-left: 5px;
       padding-top: 3px;
       transform: rotate(180);
     }
 
     &:hover::after {
-      content: url(../../files/img/arrow-blue.svg);
+      content: url(files/img/arrow-blue.svg);
       padding-left: 5px;
       padding-top: 3px;
     }

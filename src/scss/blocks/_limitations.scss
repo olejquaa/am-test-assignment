@@ -26,7 +26,7 @@
     font-size: 12px;
 
     &:before {
-      content: url(../../files/img/Dislike.svg);
+      content: url(files/img/Dislike.svg);
       padding-right: 5px;
 
       @include iPhone13 {

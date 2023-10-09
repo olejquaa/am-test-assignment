@@ -28,7 +28,7 @@
     max-width: 300px;
 
     &:before {
-      content: url(../../files/img/Like.svg);
+      content: url(files/img/Like.svg);
       padding-right: 5px;
 
       @include iPhone13 {
