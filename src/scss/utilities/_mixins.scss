@@ -1,0 +1,27 @@
+// Брейкпоинты
+@mixin desktop {
+  @media screen and (max-width: 1127px) {
+    @content;
+  }
+}
+
+@mixin iPhone13 {
+  @media screen and (min-width: 428px) and (max-width: 1126px) {
+    @content;
+  }
+}
+
+@mixin iPhoneSE {
+  @media screen and (min-width: 320px) and (max-width: 427px) {
+    @content;
+  }
+}
+
+// Шрифты
+@mixin typography-h1 {
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

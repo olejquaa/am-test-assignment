@@ -1,0 +1,26 @@
+.parimatch__content-wrapper {
+  display: grid;
+  grid-template-areas:
+    "card card card info"
+    "card card card info"
+    "comment comment comment .";
+
+  gap: 15px;
+
+  max-width: 1176px;
+
+  padding: 20px 5px;
+  @include iPhone13 {
+    grid-template-areas:
+      "card"
+      "info"
+      "comment";
+  }
+
+  @include iPhoneSE {
+    grid-template-areas:
+      "card"
+      "info"
+      "comment";
+  }
+}

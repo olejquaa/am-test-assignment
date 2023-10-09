@@ -1,0 +1,26 @@
+.button__claim {
+  width: 180px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: $button-green;
+  color: $white;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  transition: 0.4s;
+
+  grid-area: right top;
+
+  @include iPhoneSE {
+    grid-area: bottom;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $orange;
+    color: $text-primary__bwin;
+  }
+}

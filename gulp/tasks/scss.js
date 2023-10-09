@@ -1,4 +1,4 @@
-import dartSass from "sass";
+import * as dartSass from "sass";
 import gulpSass from "gulp-sass";
 import rename from "gulp-rename";
 
@@ -13,5 +13,6 @@ export const scss = () => {
       })
     )
     .pipe(rename({ extname: ".min.css" }))
-    .pipe(app.gulp.dest(app.path.build.css));
+    .pipe(app.gulp.dest(app.path.build.css))
+    .pipe(app.plugins.browserSync.stream());
 };

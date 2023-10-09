@@ -1,0 +1,26 @@
+.button__rewiew {
+  width: 180px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: $button-gray;
+  color: $text-secondary__gray;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @include iPhone13 {
+    grid-area: left;
+  }
+
+  @include iPhoneSE {
+    grid-area: top;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $text-secondary-light__bwin;
+    color: $white;
+  }
+}

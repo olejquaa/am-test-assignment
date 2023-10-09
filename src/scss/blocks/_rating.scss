@@ -1,0 +1,95 @@
+.card__card-rating {
+  display: flex;
+  align-items: center;
+  grid-area: rating;
+
+  &:before {
+    content: "5.0";
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .card-rating__group {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 10px;
+  }
+
+  .card-rating__one-star {
+    display: none;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 10px;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: "5.0";
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .card-rating__group {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      padding-left: 10px;
+    }
+
+    .card-rating__one-star {
+      display: none;
+      align-items: center;
+      flex-direction: row;
+      padding-left: 5px;
+    }
+  }
+  @include iPhone13 {
+    &:before {
+      content: "5.0";
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .card-rating__group {
+      display: none;
+    }
+
+    .card-rating__one-star {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      padding-left: 5px;
+    }
+
+    img {
+      transform: scale(80%);
+    }
+  }
+
+  @include iPhoneSE {
+    &:before {
+      content: "5.0";
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .card-rating__group {
+      display: none;
+    }
+
+    .card-rating__one-star {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      padding-left: 5px;
+    }
+
+    img {
+      transform: scale(80%);
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.parimatch__card {
+  display: grid;
+  grid-template-areas:
+    "header bonus"
+    "rockets bonus"
+    "payments bonus";
+
+  grid-template-columns: 1fr auto;
+
+  border-radius: 15px;
+  background: linear-gradient(148deg, #313446 19.06%, #070b1f 97.93%), #f7f8fd;
+
+  grid-area: card;
+  @include iPhone13 {
+    grid-template-areas:
+      "header "
+      "bonus"
+      "rockets"
+      "payments";
+  }
+
+  @include iPhoneSE {
+    grid-template-areas:
+      "header "
+      "bonus"
+      "rockets"
+      "payments";
+  }
+
+  .card__header {
+    display: grid;
+    grid-template-areas:
+      "logo title icons icons"
+      "logo rating . . "
+      "logo betting betting ."
+      "logo . . . ";
+
+    grid-template-columns: auto auto auto auto;
+
+    grid-area: header;
+  }
+
+  .pari-card__logo {
+    display: flex;
+    grid-area: logo;
+
+    width: 217px;
+    height: 119px;
+    border-radius: 15px;
+    background: linear-gradient(163deg, #313446 -13.44%, #070b1f 150.61%);
+
+    @include iPhone13 {
+      width: 119px;
+      height: 95px;
+    }
+
+    @include iPhoneSE {
+      width: 74px;
+      height: 74px;
+    }
+
+    img {
+      align-self: center;
+      margin: 0 auto;
+
+      width: 130px;
+
+      @include iPhone13 {
+        width: 89px;
+      }
+
+      @include iPhoneSE {
+        width: 52px;
+      }
+    }
+  }
+
+  .rocket__list {
+    display: grid;
+
+    grid-area: rockets;
+  }
+}

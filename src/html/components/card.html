@@ -1,0 +1,32 @@
+<li class="card @@ribbon-color" id="@@cardID">
+  @@include('./ribbon.html', {"color": '@@ribbon-color'})
+  <div class="card__header">
+    <span>
+      <p class="card__number">@@cardID</p>
+      <img src="../files/img/Fire.svg" alt="fire" />
+    </span>
+    @@include('./rating.html', {})
+  </div>
+
+  <div class="card__content-group">
+    @@include('./blockCompanyBonus.html', {}) @@include('./blockBest.html', {})
+    @@include('./blockPayments.html', {'cardID': "@@cardID"})
+    <div class="card__content-buttons">
+      @@include('./buttonClaim.html', {})
+      <button class="button__rewiew">Read Rewiew</button>
+    </div>
+    @@include('./buttonMoreInfo.html',{'id': "@@cardID"})
+  </div>
+  <div class="card__info-section invisible" id="content@@cardID">
+    <div class="info-section__wrapper">
+      <p class="info-section__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        velit repellat veritatis eum itaque aspernatur quis, eaque at iste neque
+        tempora rerum molestiae nobis. Totam eveniet at vero consequuntur
+        corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Repellendus velit repellat veritatis.
+      </p>
+      @@include('./advatages.html', {}) @@include('./limitations.html', {})
+    </div>
+  </div>
+</li>

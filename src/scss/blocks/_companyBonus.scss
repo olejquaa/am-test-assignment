@@ -1,0 +1,125 @@
+.company_bonus__container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  grid-area: bonus;
+
+  @include iPhone13 {
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(235, 236, 245, 0.6);
+  }
+
+  @include iPhoneSE {
+    padding: 10px 0;
+    border-bottom: 2px solid rgba(235, 236, 245, 0.6);
+  }
+}
+
+.company_bonus__logo {
+  display: flex;
+  min-width: 148px;
+  max-height: 125px;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+  background: linear-gradient($bwin-logo__background);
+
+  img {
+    width: 112px;
+  }
+
+  @include iPhone13 {
+    min-width: 72px;
+    height: 60px;
+
+    img {
+      width: 53px;
+    }
+  }
+
+  @include iPhoneSE {
+    min-width: 72px;
+    min-height: 84px;
+
+    img {
+      width: 53px;
+    }
+  }
+}
+
+.company_bonus__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-left: 18px;
+  max-width: 248px;
+
+  @include iPhone13 {
+    max-width: 100%;
+  }
+
+  @include iPhoneSE {
+    max-width: 100%;
+  }
+
+  .bonus__header {
+    display: inline-flex;
+    align-items: center;
+
+    color: $text-secondary__bwin;
+
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &:before {
+      content: url(../../files/img/Present.svg);
+      margin-right: 5px;
+    }
+    @include iPhone13 {
+      display: none;
+    }
+
+    @include iPhoneSE {
+      display: none;
+    }
+  }
+
+  .bonus__title {
+    color: $text-primary__bwin;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @include iPhone13 {
+      font-size: 18px;
+    }
+
+    @include iPhoneSE {
+      font-size: 18px;
+    }
+  }
+
+  .bonus__info {
+    color: $text-secondary__bwin;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    @include iPhone13 {
+      font-size: 13px;
+    }
+
+    @include iPhoneSE {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.rocket__item {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  &::before {
+    content: url(../../files/img/rocket.svg);
+
+    @include iPhone13 {
+      font-size: 12px;
+    }
+
+    @include iPhoneSE {
+      font-size: 12px;
+    }
+  }
+}

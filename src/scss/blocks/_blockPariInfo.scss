@@ -1,0 +1,45 @@
+.parimatch__info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+
+  border-radius: 15px;
+  background: #f7f8fd;
+  padding: 20px;
+
+  grid-area: info;
+
+  .info__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "icon title"
+      ".. text";
+    gap: 5px 10px;
+
+    align-items: center;
+
+    .info__title {
+      grid-area: title;
+
+      color: #313446;
+      font-family: Rubik;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .info__text {
+      grid-area: text;
+
+      color: #72768d;
+      font-family: Rubik;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

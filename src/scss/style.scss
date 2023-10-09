@@ -1,3 +1,30 @@
-body {
-  background-color: lightgray;
-}
+@import "./base/vars";
+
+// Базовые стили
+@import "./base/reset";
+@import "./base/base";
+
+// Шрифты
+@import "./base/fonts";
+
+// Утилиты
+@import "./utilities/mixins";
+
+// Блоки
+@import "./blocks/card";
+@import "./blocks/rating";
+@import "./blocks/ribbon";
+@import "./blocks/companyBonus";
+@import "./blocks/blockBest";
+@import "./blocks/blockPayments";
+@import "./blocks/buttonMoreInfo";
+@import "./blocks/card";
+@import "./blocks/advantages";
+@import "./blocks/limitations";
+@import "./blocks/buttonClaim";
+@import "./blocks/buttonReview";
+
+@import "./blocks/parimatchPageTemplate";
+@import "./blocks/blockPariCard";
+@import "./blocks/blockPariInfo";
+@import "./blocks/blockPariComment";

@@ -1,0 +1,27 @@
+.card__ribbon {
+  position: absolute;
+  top: -5px;
+  justify-self: center;
+  z-index: 1;
+
+  @include iPhone13 {
+    transform: scale(90%);
+    top: -7px;
+    left: 135px;
+  }
+
+  @include iPhoneSE {
+    transform: scale(80%);
+    top: -8px;
+    left: 100px;
+  }
+
+  img {
+    display: none;
+  }
+
+  .card-ribbon__purple-color,
+  .card-ribbon__orange-color {
+    display: block;
+  }
+}

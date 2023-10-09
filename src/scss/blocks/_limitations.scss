@@ -1,0 +1,47 @@
+.limitations {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  align-items: start;
+  justify-content: space-around;
+  border: 2px solid #ebecf5;
+  border-radius: 15px;
+
+  padding: 10px;
+  width: 404px;
+
+  @include iPhone13 {
+    margin: 10px 10px;
+    width: 388px;
+  }
+
+  @include iPhoneSE {
+    margin: 10px 10px;
+    width: 345px;
+  }
+  .limitations__item {
+    display: inline-flex;
+
+    font-size: 12px;
+
+    &:before {
+      content: url(../../files/img/Dislike.svg);
+      padding-right: 5px;
+
+      @include iPhone13 {
+        transform: scale(80%);
+      }
+      @include iPhoneSE {
+        transform: scale(80%);
+      }
+    }
+
+    @include iPhone13 {
+      height: 20px;
+    }
+    @include iPhoneSE {
+      height: 20px;
+    }
+  }
+}
