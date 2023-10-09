@@ -1,17 +1,70 @@
 <div class="parimatch__card">
   <div class="card__header">
     <div class="pari-card__logo">
-      <img src="../../files/img/Logo-Parimatch-yellow.svg" alt="logo" />
+      <img src="files/img/Logo-Parimatch-yellow.svg" alt="logo" />
     </div>
 
     <div class="pari-card__title">PariMatch</div>
-    @@include('./rating.html',{})
+    @@include('./pariRating.html',{})
+    <span class="pari-card__beting">Beting/Casino/Live Games/Fast Game</span>
+    <div class="pari-card__icons-block">
+      <div class="icons-block__item">
+        <img
+          src="../../files/img/pari_icons/Windows.svg"
+          alt="icon"
+          class="item_icon"
+        />
+        <img
+          src="../../files/img/pari_icons/Cross.svg"
+          alt="confirm"
+          class="item_confirm"
+        />
+      </div>
+      <div class="icons-block__item">
+        <img
+          src="../../files/img/pari_icons/Android.svg"
+          alt="icon"
+          class="item_icon"
+        />
+        <img
+          src="../../files/img/pari_icons/Check.svg"
+          alt="confirm"
+          class="item_confirm"
+        />
+      </div>
+      <div class="icons-block__item">
+        <img
+          src="../../files/img/pari_icons/Apple.svg"
+          alt="icon"
+          class="item_icon"
+        />
+        <img
+          src="../../files/img/pari_icons/Check.svg"
+          alt="confirm"
+          class="item_confirm"
+        />
+      </div>
+    </div>
   </div>
   <ul class="rocket__list">
     @@include('./rocketItem.html',{}) @@include('./rocketItem.html',{})
     @@include('./rocketItem.html',{})
   </ul>
-  <div class="payments">payments</div>
 
-  <div class="bonus"></div>
+  @@include("./blockPariPayments.html",{})
+
+  <div class="pari-card__bonus-block">
+    <div class="bonus-block__header">
+      <img src="../../files/img/pari_icons/bonus-block-bg.svg" alt="" />
+    </div>
+    <div class="company_bonus__info-container">
+      <span class="bonus-info__header">Welcome bonus</span>
+      <h1 class="bonus-info__title">100% Up to 500 $</h1>
+      <p class="bonus__info">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit lacus tempor,
+        vulputate id fames pulvinar curabitur faucibus.
+      </p>
+      @@include('./buttonClaim.html', {})
+    </div>
+  </div>
 </div>

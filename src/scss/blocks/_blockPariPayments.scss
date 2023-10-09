@@ -1,0 +1,61 @@
+.pari-payments {
+  min-width: 272px;
+  max-height: 163px;
+
+  grid-area: payments;
+
+  padding: 0 10px;
+
+  .pari-payments__group {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+    padding: 20px 0 20px 10px;
+
+    @include iPhone13 {
+      padding: 10px 5px;
+    }
+
+    .payments__item {
+      cursor: pointer;
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      width: 69px;
+      height: 44px;
+
+      padding: 10px;
+
+      border-radius: 5px;
+      background: rgba(49, 54, 74, 0.55);
+
+      @include iPhone13 {
+        width: 56px;
+        height: 35px;
+        img {
+          height: 20px;
+        }
+      }
+
+      @include iPhoneSE {
+        width: 43px;
+        height: 27px;
+        img {
+          height: 20px;
+        }
+      }
+
+      img {
+        background-color: white;
+        height: 22px;
+      }
+      &:hover {
+        background-color: $orange;
+      }
+    }
+  }
+}

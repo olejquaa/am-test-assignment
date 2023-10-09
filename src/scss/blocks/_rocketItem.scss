@@ -1,20 +1,28 @@
 .rocket__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgba(255, 255, 255, 0.9);
   font-family: Rubik;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding: 5px 0px;
 
   &::before {
     content: url(../../files/img/rocket.svg);
+    padding: 0 10px 0 0;
+  }
 
-    @include iPhone13 {
-      font-size: 12px;
-    }
+  @include iPhone13 {
+    font-size: 12px;
+    justify-content: flex-start;
+    padding: 5px 0px;
+    color: rgba(255, 255, 255, 0.8);
+  }
 
-    @include iPhoneSE {
-      font-size: 12px;
-    }
+  @include iPhoneSE {
+    justify-content: flex-start;
   }
 }

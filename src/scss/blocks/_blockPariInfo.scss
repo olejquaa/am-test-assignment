@@ -10,6 +10,14 @@
 
   grid-area: info;
 
+  min-width: 334px;
+
+  @include iPhoneSE {
+    max-width: 300px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+
   .info__item {
     display: grid;
     grid-template-columns: auto 1fr;

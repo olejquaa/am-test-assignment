@@ -6,6 +6,12 @@
   margin-top: 10px;
   z-index: 0;
 
+  @include iPhoneSE {
+    min-width: 300px;
+
+    margin: 0 auto;
+  }
+
   grid-template-areas:
     "header "
     "content "

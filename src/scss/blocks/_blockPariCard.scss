@@ -11,12 +11,19 @@
   background: linear-gradient(148deg, #313446 19.06%, #070b1f 97.93%), #f7f8fd;
 
   grid-area: card;
+
+  min-width: 991px;
+  min-height: 331px;
+
   @include iPhone13 {
     grid-template-areas:
       "header "
       "bonus"
       "rockets"
       "payments";
+
+    min-width: 408px;
+    min-height: 550px;
   }
 
   @include iPhoneSE {
@@ -25,22 +32,47 @@
       "bonus"
       "rockets"
       "payments";
+
+    min-width: 300px;
+
+    margin: 0 auto;
   }
 
   .card__header {
     display: grid;
     grid-template-areas:
-      "logo title icons icons"
-      "logo rating . . "
-      "logo betting betting ."
-      "logo . . . ";
+      "logo title icons "
+      "logo rating .  "
+      "logo betting betting "
+      "logo . . ";
 
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
 
     grid-area: header;
+    padding: 20px 0px 20px 20px;
+
+    @include iPhone13 {
+      grid-template-areas:
+        "logo title "
+        "logo betting  "
+        "logo rating"
+        "logo icons";
+      grid-template-columns: auto 1fr;
+      gap: 0 10px;
+    }
+    @include iPhoneSE {
+      grid-template-areas:
+        "logo title "
+        "logo betting  "
+        "logo rating"
+        "icons icons";
+      grid-template-columns: auto 1fr;
+      gap: 5px 10px;
+    }
   }
 
   .pari-card__logo {
+    grid-area: logo;
     display: flex;
     grid-area: logo;
 
@@ -75,9 +107,225 @@
     }
   }
 
+  .pari-card__title {
+    color: #fff;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    grid-area: title;
+
+    @include iPhone13 {
+      color: #fff;
+      font-family: Rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    @include iPhoneSE {
+      color: #fff;
+      font-family: Rubik;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
   .rocket__list {
     display: grid;
-
+    grid-template-columns: auto auto;
     grid-area: rockets;
+    padding: 0px 20px;
+    justify-items: baseline;
+    height: 100%;
+
+    @include iPhone13 {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 20px 15px 0px 15px;
+    }
+
+    @include iPhoneSE {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 20px 15px;
+    }
+  }
+
+  .pari-card__beting {
+    grid-area: betting;
+
+    color: #72768d;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @include iPhone13 {
+      color: #72768d;
+      font-family: Rubik;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    @include iPhoneSE {
+      color: #72768d;
+      font-family: Rubik;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .pari-card__icons-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    .icons-block__item {
+      align-self: center;
+
+      img {
+        padding: 5px;
+      }
+    }
+
+    @include iPhone13 {
+      padding: 0;
+      justify-content: start;
+      grid-area: icons;
+    }
+    @include iPhoneSE {
+      padding: 0;
+      justify-content: start;
+      grid-area: icons;
+    }
+  }
+
+  .pari-card__bonus-block {
+    display: flex;
+    flex-direction: column;
+    grid-area: bonus;
+
+    width: 329px;
+    height: 100%;
+
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 0px 15px 15px 0px;
+    background: linear-gradient(270deg, #313446 -5.44%, #070b1f 20.61%);
+
+    @include iPhone13 {
+      justify-self: center;
+      width: 388px;
+      padding: 10px 10px;
+      height: 194px;
+
+      border-radius: 15px;
+      img {
+        display: none;
+      }
+    }
+    @include iPhoneSE {
+      justify-self: center;
+      width: 280px;
+      padding: 10px 10px;
+      height: 202px;
+
+      border-radius: 15px;
+      img {
+        display: none;
+      }
+    }
+
+    .company_bonus__info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      height: 100%;
+
+      @include iPhone13 {
+        padding: 10px;
+      }
+
+      @include iPhoneSE {
+        padding: 10px;
+      }
+
+      .bonus-info__header {
+        display: inline-flex;
+        align-items: center;
+
+        font-family: Rubik;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        background: linear-gradient(180deg, #f90 0%, #ff630c 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:before {
+          content: url(../../files/img/Present.svg);
+          margin-right: 5px;
+        }
+
+        @include iPhone13 {
+          font-size: 12px;
+        }
+        @include iPhoneSE {
+          font-size: 12px;
+        }
+      }
+
+      h1 {
+        color: #fff;
+        font-family: Rubik;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @include iPhone13 {
+          font-size: 18px;
+        }
+        @include iPhoneSE {
+          font-size: 18px;
+        }
+      }
+
+      p {
+        color: #72768d;
+        font-family: Rubik;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 166.667% */
+
+        @include iPhoneSE {
+          line-height: 17px;
+        }
+      }
+
+      .button__claim {
+        width: 100%;
+        padding: 10px;
+      }
+    }
   }
 }

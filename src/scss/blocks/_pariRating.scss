@@ -1,0 +1,47 @@
+.parimatch-rating {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  grid-area: rating;
+
+  padding: 0 0 10px 0;
+
+  color: $white;
+
+  &:before {
+    content: "5.0";
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .parimatch-rating__group {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 10px;
+  }
+
+  @include iPhone13 {
+    &:before {
+      content: "5.0";
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    img {
+      transform: scale(80%);
+    }
+  }
+
+  @include iPhoneSE {
+    &:before {
+      content: "5.0";
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    img {
+      transform: scale(80%);
+    }
+  }
+}

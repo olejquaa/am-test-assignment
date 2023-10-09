@@ -9,6 +9,12 @@
 
   grid-area: comment;
 
+  @include iPhoneSE {
+    max-width: 300px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+
   .comment__header {
     display: grid;
     grid-template-areas:

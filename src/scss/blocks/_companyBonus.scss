@@ -77,7 +77,7 @@
     line-height: normal;
 
     &:before {
-      content: url(../../files/img/Present.svg);
+      content: url(.././files/img/Present.svg);
       margin-right: 5px;
     }
     @include iPhone13 {
