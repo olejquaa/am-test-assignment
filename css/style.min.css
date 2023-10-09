@@ -157,6 +157,12 @@ body {
   z-index: 0;
   grid-template-areas: "header " "content " "info";
 }
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .card {
+    min-width: 300px;
+    margin: 0 auto;
+  }
+}
 .card .card__header {
   display: flex;
   align-items: center;
@@ -524,7 +530,7 @@ body {
   line-height: normal;
 }
 .company_bonus__info .bonus__header:before {
-  content: url(./files/img/Present.svg);
+  content: url(.././files/img/Present.svg);
   margin-right: 5px;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
@@ -603,7 +609,7 @@ body {
   line-height: 20px;
 }
 .card-content__best .best__item p:before {
-  content: url(./files/img/rocket.svg);
+  content: url(files/img/rocket.svg);
   padding-right: 10px;
 }
 @media screen and (min-width: 320px) and (max-width: 427px) {
@@ -682,13 +688,13 @@ body {
   min-width: 110px;
 }
 .more_info p::after {
-  content: url(./files/img/arrow-gray.svg);
+  content: url(files/img/arrow-gray.svg);
   padding-left: 5px;
   padding-top: 3px;
   transform: rotate(180);
 }
 .more_info p:hover::after {
-  content: url(./files/img/arrow-blue.svg);
+  content: url(files/img/arrow-blue.svg);
   padding-left: 5px;
   padding-top: 3px;
 }
@@ -704,6 +710,12 @@ body {
   margin-top: 10px;
   z-index: 0;
   grid-template-areas: "header " "content " "info";
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .card {
+    min-width: 300px;
+    margin: 0 auto;
+  }
 }
 .card .card__header {
   display: flex;
@@ -913,7 +925,7 @@ body {
   max-width: 300px;
 }
 .advantages .advantages__item:before {
-  content: url(./files/img/Like.svg);
+  content: url(files/img/Like.svg);
   padding-right: 5px;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
@@ -965,7 +977,7 @@ body {
   font-size: 12px;
 }
 .limitations .limitations__item:before {
-  content: url(./files/img/Dislike.svg);
+  content: url(files/img/Dislike.svg);
   padding-right: 5px;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
@@ -1065,24 +1077,46 @@ body {
   border-radius: 15px;
   background: linear-gradient(148deg, #313446 19.06%, #070b1f 97.93%), #f7f8fd;
   grid-area: card;
+  min-width: 991px;
+  min-height: 331px;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
   .parimatch__card {
     grid-template-areas: "header " "bonus" "rockets" "payments";
+    min-width: 408px;
+    min-height: 550px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 427px) {
   .parimatch__card {
     grid-template-areas: "header " "bonus" "rockets" "payments";
+    min-width: 300px;
+    margin: 0 auto;
   }
 }
 .parimatch__card .card__header {
   display: grid;
-  grid-template-areas: "logo title icons icons" "logo rating . . " "logo betting betting ." "logo . . . ";
-  grid-template-columns: auto auto auto auto;
+  grid-template-areas: "logo title icons " "logo rating .  " "logo betting betting " "logo . . ";
+  grid-template-columns: auto auto auto;
   grid-area: header;
+  padding: 20px 0px 20px 20px;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .parimatch__card .card__header {
+    grid-template-areas: "logo title " "logo betting  " "logo rating" "logo icons";
+    grid-template-columns: auto 1fr;
+    gap: 0 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__card .card__header {
+    grid-template-areas: "logo title " "logo betting  " "logo rating" "icons icons";
+    grid-template-columns: auto 1fr;
+    gap: 5px 10px;
+  }
 }
 .parimatch__card .pari-card__logo {
+  grid-area: logo;
   display: flex;
   grid-area: logo;
   width: 217px;
@@ -1117,9 +1151,242 @@ body {
     width: 52px;
   }
 }
+.parimatch__card .pari-card__title {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  grid-area: title;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .parimatch__card .pari-card__title {
+    color: #fff;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__card .pari-card__title {
+    color: #fff;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
 .parimatch__card .rocket__list {
   display: grid;
+  grid-template-columns: auto auto;
   grid-area: rockets;
+  padding: 0px 20px;
+  justify-items: baseline;
+  height: 100%;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .parimatch__card .rocket__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px 15px 0px 15px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__card .rocket__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px 15px;
+  }
+}
+.parimatch__card .pari-card__beting {
+  grid-area: betting;
+  color: #72768d;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .parimatch__card .pari-card__beting {
+    color: #72768d;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__card .pari-card__beting {
+    color: #72768d;
+    font-family: Rubik;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.parimatch__card .pari-card__icons-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.parimatch__card .pari-card__icons-block .icons-block__item {
+  align-self: center;
+}
+.parimatch__card .pari-card__icons-block .icons-block__item img {
+  padding: 5px;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .parimatch__card .pari-card__icons-block {
+    padding: 0;
+    justify-content: start;
+    grid-area: icons;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__card .pari-card__icons-block {
+    padding: 0;
+    justify-content: start;
+    grid-area: icons;
+  }
+}
+.parimatch__card .pari-card__bonus-block {
+  display: flex;
+  flex-direction: column;
+  grid-area: bonus;
+  width: 329px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0px 15px 15px 0px;
+  background: linear-gradient(270deg, #313446 -5.44%, #070b1f 20.61%);
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .parimatch__card .pari-card__bonus-block {
+    justify-self: center;
+    width: 388px;
+    padding: 10px 10px;
+    height: 194px;
+    border-radius: 15px;
+  }
+  .parimatch__card .pari-card__bonus-block img {
+    display: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__card .pari-card__bonus-block {
+    justify-self: center;
+    width: 280px;
+    padding: 10px 10px;
+    height: 202px;
+    border-radius: 15px;
+  }
+  .parimatch__card .pari-card__bonus-block img {
+    display: none;
+  }
+}
+.parimatch__card .pari-card__bonus-block .company_bonus__info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .parimatch__card .pari-card__bonus-block .company_bonus__info-container {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__card .pari-card__bonus-block .company_bonus__info-container {
+    padding: 10px;
+  }
+}
+.parimatch__card
+  .pari-card__bonus-block
+  .company_bonus__info-container
+  .bonus-info__header {
+  display: inline-flex;
+  align-items: center;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: linear-gradient(180deg, #f90 0%, #ff630c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.parimatch__card
+  .pari-card__bonus-block
+  .company_bonus__info-container
+  .bonus-info__header:before {
+  content: url(../files/img/Present.svg);
+  margin-right: 5px;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .parimatch__card
+    .pari-card__bonus-block
+    .company_bonus__info-container
+    .bonus-info__header {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__card
+    .pari-card__bonus-block
+    .company_bonus__info-container
+    .bonus-info__header {
+    font-size: 12px;
+  }
+}
+.parimatch__card .pari-card__bonus-block .company_bonus__info-container h1 {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .parimatch__card .pari-card__bonus-block .company_bonus__info-container h1 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__card .pari-card__bonus-block .company_bonus__info-container h1 {
+    font-size: 18px;
+  }
+}
+.parimatch__card .pari-card__bonus-block .company_bonus__info-container p {
+  color: #72768d;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__card .pari-card__bonus-block .company_bonus__info-container p {
+    line-height: 17px;
+  }
+}
+.parimatch__card
+  .pari-card__bonus-block
+  .company_bonus__info-container
+  .button__claim {
+  width: 100%;
+  padding: 10px;
 }
 
 .parimatch__info {
@@ -1130,6 +1397,14 @@ body {
   background: #f7f8fd;
   padding: 20px;
   grid-area: info;
+  min-width: 334px;
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__info {
+    max-width: 300px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
 }
 .parimatch__info .info__item {
   display: grid;
@@ -1165,6 +1440,13 @@ body {
   padding: 15px;
   grid-area: comment;
 }
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch__comment {
+    max-width: 300px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+}
 .parimatch__comment .comment__header {
   display: grid;
   grid-template-areas: "pic title" "pic subtitle";
@@ -1197,4 +1479,128 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 156.25% */
+}
+
+.parimatch-rating {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  grid-area: rating;
+  padding: 0 0 10px 0;
+  color: #fff;
+}
+.parimatch-rating:before {
+  content: "5.0";
+  font-size: 18px;
+  font-weight: 500;
+}
+.parimatch-rating .parimatch-rating__group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 10px;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .parimatch-rating:before {
+    content: "5.0";
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .parimatch-rating img {
+    transform: scale(80%);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .parimatch-rating:before {
+    content: "5.0";
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .parimatch-rating img {
+    transform: scale(80%);
+  }
+}
+
+.rocket__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 5px 0px;
+}
+.rocket__item::before {
+  content: url(../files/img/rocket.svg);
+  padding: 0 10px 0 0;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .rocket__item {
+    font-size: 12px;
+    justify-content: flex-start;
+    padding: 5px 0px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .rocket__item {
+    justify-content: flex-start;
+  }
+}
+
+.pari-payments {
+  min-width: 272px;
+  max-height: 163px;
+  grid-area: payments;
+  padding: 0 10px;
+}
+.pari-payments .pari-payments__group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0 20px 10px;
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .pari-payments .pari-payments__group {
+    padding: 10px 5px;
+  }
+}
+.pari-payments .pari-payments__group .payments__item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 69px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(49, 54, 74, 0.55);
+}
+@media screen and (min-width: 428px) and (max-width: 1126px) {
+  .pari-payments .pari-payments__group .payments__item {
+    width: 56px;
+    height: 35px;
+  }
+  .pari-payments .pari-payments__group .payments__item img {
+    height: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 427px) {
+  .pari-payments .pari-payments__group .payments__item {
+    width: 43px;
+    height: 27px;
+  }
+  .pari-payments .pari-payments__group .payments__item img {
+    height: 20px;
+  }
+}
+.pari-payments .pari-payments__group .payments__item img {
+  background-color: white;
+  height: 22px;
+}
+.pari-payments .pari-payments__group .payments__item:hover {
+  background-color: #ff922e;
 }
