@@ -1561,7 +1561,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 0 20px 10px;
+  padding: 0px 0px 20px 0px;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
   .pari-payments .pari-payments__group {
