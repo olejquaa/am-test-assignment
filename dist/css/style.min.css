@@ -530,7 +530,7 @@ body {
   line-height: normal;
 }
 .company_bonus__info .bonus__header:before {
-  content: url(.././files/img/Present.svg);
+  content: url(files/img/Present.svg);
   margin-right: 5px;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
@@ -1331,7 +1331,7 @@ body {
   .pari-card__bonus-block
   .company_bonus__info-container
   .bonus-info__header:before {
-  content: url(../files/img/Present.svg);
+  content: url(files/img/Present.svg);
   margin-right: 5px;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
@@ -1534,7 +1534,7 @@ body {
   padding: 5px 0px;
 }
 .rocket__item::before {
-  content: url(../files/img/rocket.svg);
+  content: url(files/img/rocket.svg);
   padding: 0 10px 0 0;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
