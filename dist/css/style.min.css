@@ -78,7 +78,7 @@ input::-ms-clear {
 }
 
 button,
-input[type=submit] {
+input[type="submit"] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -1311,7 +1311,10 @@ body {
     padding: 10px;
   }
 }
-.parimatch__card .pari-card__bonus-block .company_bonus__info-container .bonus-info__header {
+.parimatch__card
+  .pari-card__bonus-block
+  .company_bonus__info-container
+  .bonus-info__header {
   display: inline-flex;
   align-items: center;
   font-family: Rubik;
@@ -1324,17 +1327,26 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.parimatch__card .pari-card__bonus-block .company_bonus__info-container .bonus-info__header:before {
-  content: url(../../files/img/Present.svg);
+.parimatch__card
+  .pari-card__bonus-block
+  .company_bonus__info-container
+  .bonus-info__header:before {
+  content: url(../files/img/Present.svg);
   margin-right: 5px;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
-  .parimatch__card .pari-card__bonus-block .company_bonus__info-container .bonus-info__header {
+  .parimatch__card
+    .pari-card__bonus-block
+    .company_bonus__info-container
+    .bonus-info__header {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 427px) {
-  .parimatch__card .pari-card__bonus-block .company_bonus__info-container .bonus-info__header {
+  .parimatch__card
+    .pari-card__bonus-block
+    .company_bonus__info-container
+    .bonus-info__header {
     font-size: 12px;
   }
 }
@@ -1369,7 +1381,10 @@ body {
     line-height: 17px;
   }
 }
-.parimatch__card .pari-card__bonus-block .company_bonus__info-container .button__claim {
+.parimatch__card
+  .pari-card__bonus-block
+  .company_bonus__info-container
+  .button__claim {
   width: 100%;
   padding: 10px;
 }
@@ -1519,7 +1534,7 @@ body {
   padding: 5px 0px;
 }
 .rocket__item::before {
-  content: url(../../files/img/rocket.svg);
+  content: url(../files/img/rocket.svg);
   padding: 0 10px 0 0;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
