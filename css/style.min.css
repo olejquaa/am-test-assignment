@@ -1534,7 +1534,7 @@ body {
   padding: 5px 0px;
 }
 .rocket__item::before {
-  content: url(./files/img/rocket.svg);
+  content: url(../files/img/rocket.svg);
   padding: 0 10px 0 0;
 }
 @media screen and (min-width: 428px) and (max-width: 1126px) {
