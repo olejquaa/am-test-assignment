@@ -1,0 +1,99 @@
+<section class="table-wrapper">
+  <table class="points-table">
+    <caption class="points-table__caption invisible">
+      caption
+    </caption>
+
+    <colgroup class="col-team">
+      <col />
+    </colgroup>
+    <colgroup class="col-points">
+      <col />
+      <col />
+      <col />
+      <col />
+      <col />
+      <col />
+    </colgroup>
+    <colgroup class="col-result">
+      <col />
+    </colgroup>
+
+    <thead class="points-table__head">
+      <tr class="table-head__row">
+        <th class="table-head__cell team" title="team">Team</th>
+        <th class="table-head__cell points" title="matches">M</th>
+        <th class="table-head__cell points" title="wins">W</th>
+        <th class="table-head__cell points" title="loses">L</th>
+        <th class="table-head__cell points" title="draws">D</th>
+        <th class="table-head__cell points" title="matches-abandoned">NR</th>
+        <th class="table-head__cell points" title="points">PTS</th>
+        <th class="table-head__cell result" title="series">Series Form</th>
+      </tr>
+    </thead>
+    <tbody class="points-table__body">
+      <tr class="table-body__collapse-row" id="row1">
+        @@include('./components/table/teamRow.html', {"logo":
+        "../files/img/team-logo/ShreeLanka.svg", "name": "Shree Lanka",
+        "shortName": "SHL", })
+      </tr>
+      <tr class="table-body__hidden-row invisible" id="hidden-row1">
+        <td colspan="8" class="hidden-table">
+          @@include('./components/table/opponentsTable.html')
+        </td>
+      </tr>
+      <tr class="table-body__collapse-row" id="row2">
+        @@include('./components/table/teamRow.html',{ "logo":
+        "../files/img/team-logo/DehliCapitals.svg", "name": "Dehli Capitals",
+        "shortName": "DCA",})
+      </tr>
+      <tr class="table-body__hidden-row invisible" id="hidden-row2">
+        <td colspan="8" class="hidden-table">
+          @@include('./components/table/opponentsTable.html'.{})
+        </td>
+      </tr>
+      <tr class="table-body__collapse-row" id="row3">
+        @@include('./components/table/teamRow.html',{ "logo":
+        "../files/img/team-logo/InnocentKaia.svg", "name": "Innocent Kaia",
+        "shortName": "IKA",})
+      </tr>
+      <tr class="table-body__hidden-row invisible" id="hidden-row3">
+        <td colspan="8" class="hidden-table">
+          @@include('./components/table/opponentsTable.html'.{})
+        </td>
+      </tr>
+      <tr class="table-body__collapse-row" id="row4">
+        @@include('./components/table/teamRow.html',{"logo":
+        "../files/img/team-logo/InnocentKaia.svg", "name": "Innocent Kaia",
+        "shortName": "IKA",})
+      </tr>
+      <tr class="table-body__hidden-row invisible" id="hidden-row4">
+        <td colspan="8" class="hidden-table">
+          @@include('./components/table/opponentsTable.html'.{})
+        </td>
+      </tr>
+
+      <tr class="table-body__collapse-row" id="row5">
+        @@include('./components/table/teamRow.html',{ "logo":
+        "../files/img/team-logo/DehliCapitals.svg", "name": "Dehli Capitals",
+        "shortName": "DCA",})
+      </tr>
+      <tr class="table-body__hidden-row invisible" id="hidden-row5">
+        <td colspan="8" class="hidden-table">
+          @@include('./components/table/opponentsTable.html'.{})
+        </td>
+      </tr>
+      <tr class="table-body__collapse-row" id="row6">
+        @@include('./components/table/teamRow.html',{ "logo":
+        "../files/img/team-logo/DehliCapitals.svg", "name": "Dehli Capitals",
+        "shortName": "DCA",})
+      </tr>
+      <tr class="table-body__hidden-row invisible" id="hidden-row6">
+        <td colspan="8" class="hidden-table">
+          @@include('./components/table/opponentsTable.html'.{})
+        </td>
+      </tr>
+    </tbody>
+    <tfoot class="points-table__footer invisible"></tfoot>
+  </table>
+</section>

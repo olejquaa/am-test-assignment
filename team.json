@@ -1,0 +1,26 @@
+{
+  "teams": {
+    "shreeLanka": {
+      "logo": "../files/img/team-logo/ShreeLanka.svg",
+      "name": "Shree Lanka",
+      "shortName": "SHL",
+      "resultImage": "./files/img/games-result/lose.svg",
+      "resultText": "New Zealand won by 35 runs"
+    },
+
+    "dehliCapitals": {
+      "logo": "../files/img/team-logo/DehliCapitals.svg",
+      "name": "Dehli Capitals",
+      "shortName": "DCA",
+      "resultImage": "../files/img/games-result/win.svg",
+      "resultText": "New Zealand won by 35 runs"
+    },
+    "innocentKaia": {
+      "logo": "../files/img/team-logo/InnocentKaia.svg",
+      "name": "Innocent Kaia",
+      "shortName": "IKA",
+      "resultImage": "./files/img/games-result/win.svg",
+      "resultText": "New Zealand won by 35 runs"
+    }
+  }
+}

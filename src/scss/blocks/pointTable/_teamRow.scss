@@ -1,0 +1,39 @@
+.collapse-row__cell .result {
+  img {
+    padding: 3px;
+  }
+}
+.team {
+  min-width: 100px;
+}
+
+.points {
+  width: 40px;
+}
+
+.result {
+  width: 150px;
+}
+
+.collapse-row__cell {
+  span {
+    a,
+    A:visited {
+      text-decoration: underline;
+      color: white;
+    }
+  }
+}
+
+.team__long-name {
+  @include mobile {
+    display: none;
+  }
+}
+
+.team__short-name {
+  display: none;
+  @include mobile {
+    display: contents;
+  }
+}

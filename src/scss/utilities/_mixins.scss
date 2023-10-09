@@ -17,6 +17,12 @@
   }
 }
 
+@mixin mobile {
+  @media screen and (max-width: 550px) {
+    @content;
+  }
+}
+
 // Шрифты
 @mixin typography-h1 {
   font-family: Rubik;

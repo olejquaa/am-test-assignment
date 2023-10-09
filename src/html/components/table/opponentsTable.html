@@ -1,0 +1,53 @@
+<table class="opponents-table">
+  <caption class="invisible">
+    Opponents caption HJKDHLSF
+  </caption>
+
+  <colgroup>
+    <col class="col-opponent" />
+    <col class="col-date" />
+    <col class="col-result" />
+  </colgroup>
+
+  <thead class="opponents-table__head">
+    <tr class="op-head__row">
+      <th class="op-head__cell" title="opponent">Opponent</th>
+      <th class="op-head__cell" title="date">Date</th>
+      <th class="op-head__cell" title="result">Result</th>
+    </tr>
+  </thead>
+  <tbody class="opponents-table__body">
+    <tr class="opponents-table__row">
+      @@include('./opponentRow.html',{ "logo":
+      "../files/img/team-logo/ShreeLanka.svg", "name": "Shree Lanka",
+      "shortName": "SHL", "resultImage": "./files/img/games-result/lose.svg",
+      "resultText": "New Zealand won by 35 runs" } )
+    </tr>
+    <tr class="opponents-table__row">
+      @@include('./opponentRow.html', { "logo":
+      "./files/img/team-logo/DehliCapitals.svg", "name": "Dehli Capitals",
+      "shortName": "DCA", "resultImage": "./files/img/games-result/win.svg",
+      "resultText": "New Zealand won by 35 runs" })
+    </tr>
+    <tr class="opponents-table__row">
+      @@include('./opponentRow.html', { "logo":
+      "../files/img/team-logo/InnocentKaia.svg", "name": "Innocent Kaia",
+      "shortName": "IKA", "resultImage": "./files/img/games-result/draw.svg",
+      "resultText": "New Zealand won by 35 runs" })
+    </tr>
+    <tr class="opponents-table__row">
+      @@include('./opponentRow.html', { "logo":
+      "./files/img/team-logo/DehliCapitals.svg", "name": "Dehli Capitals",
+      "shortName": "DCA", "resultImage": "./files/img/games-result/win.svg",
+      "resultText": "New Zealand won by 35 runs" })
+    </tr>
+    <tr class="opponents-table__row">
+      @@include('./opponentRow.html', { "logo":
+      "./files/img/team-logo/DehliCapitals.svg", "name": "Dehli Capitals",
+      "shortName": "DCA", "resultImage": "./files/img/games-result/win.svg",
+      "resultText": "New Zealand won by 35 runs" })
+    </tr>
+  </tbody>
+
+  <tfoot class="invisible"></tfoot>
+</table>
